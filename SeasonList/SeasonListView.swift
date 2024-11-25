@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct SeasonListView: View {
-    //Mark:computed properties
     var body: some View {
         NavigationStack{
-            List{
-                
-            }
-            .navigationTitle("Season")
-            }
+            SeasonView(providedSeason: spring)
+            SeasonView(providedSeason: summer)
+            SeasonView(providedSeason: fall)
+            SeasonView(providedSeason: winter)
         }
+        .navigationTitle("Seasons")
     }
+        }
 #Preview {
    SeasonListView()
 }
